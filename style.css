@@ -1,0 +1,515 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263326;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.logo span {
+    margin-right: 5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #444;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2e7d32;
+}
+
+.login-btn {
+    background: #2e7d32;
+    color: white;
+
+    padding: 10px 24px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #1b5e20;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 30px;
+}
+
+.hero-content {
+    width: 55%;
+}
+
+.small-title {
+    color: #2e7d32;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 62px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+    color: #263326;
+}
+
+.hero h1 span {
+    color: #2e7d32;
+}
+
+.hero-description {
+    max-width: 570px;
+
+    color: #666;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn {
+    display: inline-block;
+
+    background: #2e7d32;
+    color: white;
+
+    padding: 13px 28px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #1b5e20;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    display: inline-block;
+
+    color: #2e7d32;
+
+    border: 1px solid #2e7d32;
+
+    padding: 12px 28px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: #2e7d32;
+    color: white;
+}
+
+
+/* =========================
+   HERO CARD
+========================= */
+
+.hero-image {
+    width: 38%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.image-card {
+    width: 350px;
+    height: 350px;
+
+    background: #e8f5e9;
+
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.tractor {
+    font-size: 110px;
+
+    margin-bottom: 20px;
+}
+
+.image-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+
+    color: #2e7d32;
+}
+
+.image-card p {
+    color: #666;
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #2e7d32;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+
+    color: #263326;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: #f7faf7;
+
+    padding: 90px 30px;
+}
+
+.about-content {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.about-text p {
+    color: #666;
+
+    font-size: 17px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    padding: 90px 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 30px 25px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    background: white;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    border-color: #c8e6c9;
+}
+
+.feature-icon {
+    font-size: 45px;
+
+    margin-bottom: 18px;
+}
+
+.feature-card h3 {
+    font-size: 19px;
+
+    margin-bottom: 10px;
+
+    color: #2e7d32;
+}
+
+.feature-card p {
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+/* =========================
+   CALL TO ACTION
+========================= */
+
+.cta {
+    background: #2e7d32;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 30px;
+}
+
+.cta h2 {
+    font-size: 35px;
+
+    margin-bottom: 12px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+
+    color: #e8f5e9;
+}
+
+.cta .primary-btn {
+    background: white;
+
+    color: #2e7d32;
+}
+
+.cta .primary-btn:hover {
+    background: #f1f1f1;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #1b2a1b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #c8d3c8;
+
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 20px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 50px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .image-card {
+        width: 280px;
+        height: 280px;
+    }
+
+    .tractor {
+        font-size: 80px;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .cta h2 {
+        font-size: 28px;
+    }
+}
